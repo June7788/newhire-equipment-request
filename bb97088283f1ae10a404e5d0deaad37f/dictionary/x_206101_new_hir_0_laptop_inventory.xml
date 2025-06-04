@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="cfeacc8683f1ae10a404e5d0deaad3a2" label="Laptop Inventory" max_length="40" name="x_206101_new_hir_0_laptop_inventory" type="collection">
+        <element label="Assigner" max_length="32" name="assigner" reference="sys_user" type="reference"/>
+        <element choice="3" label="Laptop Model" max_length="40" name="laptop_model" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="MacBook" sequence="1" value="macbook"/>
+                <element inactive_on_update="false" label="Dell" sequence="2" value="dell"/>
+                <element inactive_on_update="false" label="ThinkPad" sequence="0" value="thinkpad"/>
+            </choice>
+        </element>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Available" sequence="0" value="available"/>
+                <element inactive_on_update="false" label="Assigned" sequence="1" value="assigned"/>
+            </choice>
+        </element>
+        <element label="Serial Number" max_length="40" name="serial_number" type="string"/>
+        <index name="index">
+            <element name="assigner"/>
+        </index>
+    </element>
+</database>

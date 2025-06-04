@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9a7888c283f1ae10a404e5d0deaad35b" extends="task" label="Equipment Request" max_length="40" name="x_206101_new_hir_0_equipment_request" type="collection">
+        <element label="Comment" max_length="400" name="comment" type="string"/>
+        <element label="Requested For" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element label="Assignment Date" max_length="40" name="assignment_date" type="glide_date_time"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="bdcb83a85f220100a9ad2572f2b4773d" label="Requested By" max_length="32" name="requested_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="Is Completed" max_length="40" name="is_completed" type="boolean"/>
+        <element choice="3" default="thinkpad" label="Laptop Model" max_length="40" name="laptop_model" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="ThinkPad" sequence="0" value="thinkpad"/>
+                <element inactive_on_update="false" label="MacBook" sequence="1" value="macbook"/>
+                <element inactive_on_update="false" label="Dell" sequence="2" value="dell"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="New Hire Onboarding">421da10683f9ae10a404e5d0deaad37c</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 09:48:44</sys_created_on>
+        <sys_id>da1ee54683f9ae10a404e5d0deaad384</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.New Hire Onboarding</sys_name>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_da1ee54683f9ae10a404e5d0deaad384</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 09:48:44</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</application>
+        <file_path/>
+        <instance_id>46b46c1e1b2639dcc84543f4bd4bcb61</instance_id>
+        <instance_name>dev216198</instance_name>
+        <name>sc_cat_item_catalog_da1ee54683f9ae10a404e5d0deaad384</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="New Hire Onboarding">421da10683f9ae10a404e5d0deaad37c</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-30 09:48:44</sys_created_on><sys_id>da1ee54683f9ae10a404e5d0deaad384</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.New Hire Onboarding</sys_name><sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package><sys_policy/><sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope><sys_update_name>sc_cat_item_catalog_da1ee54683f9ae10a404e5d0deaad384</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-30 09:48:44</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-547250854</payload_hash>
+        <record_name>Service Catalog.New Hire Onboarding</record_name>
+        <reverted_from/>
+        <source>ff97488283f1ae10a404e5d0deaad318</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 09:48:44</sys_created_on>
+        <sys_id>921ee54683f9ae10a404e5d0deaad388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19720980b5e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 09:48:44</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>d21ee54654f9ae1079ee5765ea886487</update_guid>
+        <update_guid_history>d21ee54654f9ae1079ee5765ea886487:-547250854</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.New Hire Onboarding">152e294683f9ae10a404e5d0deaad3cd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 09:48:56</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>02cf8443eecc4fc9882af25f1e59d059</sys_id>
+        <sys_metadata>da1ee54683f9ae10a404e5d0deaad384</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.New Hire Onboarding</sys_name>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_parent display_value="">421da10683f9ae10a404e5d0deaad37c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_scope_delete display_value="">2bb46b0be8674aac9d3deb1307567110</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_da1ee54683f9ae10a404e5d0deaad384</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_da1ee54683f9ae10a404e5d0deaad384">921ee54683f9ae10a404e5d0deaad388</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 09:48:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

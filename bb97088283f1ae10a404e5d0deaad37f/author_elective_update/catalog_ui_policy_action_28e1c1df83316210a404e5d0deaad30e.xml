@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="New Hire Laptop Request">d6cd888a83f1ae10a404e5d0deaad3dd</catalog_item>
+        <catalog_variable>IO:d9fdcc8a83f1ae10a404e5d0deaad374</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-03 03:48:28</sys_created_on>
+        <sys_id>28e1c1df83316210a404e5d0deaad30e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>requested_for</sys_name>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_28e1c1df83316210a404e5d0deaad30e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-03 03:48:28</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Step1">8ca1819f83316210a404e5d0deaad33b</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>requested_for</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=28e1c1df83316210a404e5d0deaad30e"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</application>
+        <file_path/>
+        <instance_id>46b46c1e1b2639dcc84543f4bd4bcb61</instance_id>
+        <instance_name>dev216198</instance_name>
+        <name>catalog_ui_policy_action_28e1c1df83316210a404e5d0deaad30e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="New Hire Laptop Request">d6cd888a83f1ae10a404e5d0deaad3dd</catalog_item><catalog_variable>IO:d9fdcc8a83f1ae10a404e5d0deaad374</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-03 03:48:28</sys_created_on><sys_id>28e1c1df83316210a404e5d0deaad30e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>requested_for</sys_name><sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package><sys_policy/><sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope><sys_update_name>catalog_ui_policy_action_28e1c1df83316210a404e5d0deaad30e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-03 03:48:28</sys_updated_on><table/><ui_policy display_value="Step1">8ca1819f83316210a404e5d0deaad33b</ui_policy><value/><value_action>ignore</value_action><variable>requested_for</variable><variable_set/><visible>ignore</visible></catalog_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=28e1c1df83316210a404e5d0deaad30e"/></record_update>]]></payload>
+        <payload_hash>1558379769</payload_hash>
+        <record_name>requested_for</record_name>
+        <reverted_from/>
+        <source>ff97488283f1ae10a404e5d0deaad318</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-03 03:48:28</sys_created_on>
+        <sys_id>77f145df83316210a404e5d0deaad3a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19733e7a4030000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-03 03:48:28</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>7bf145dfc931621048eb18397670109f</update_guid>
+        <update_guid_history>7bf145dfc931621048eb18397670109f:1558379769</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="requested_for">d8a3095383716210a404e5d0deaad3b0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-03 03:55:36</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>19f609e009534e9287d854c303680601</sys_id>
+        <sys_metadata>28e1c1df83316210a404e5d0deaad30e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>requested_for</sys_name>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_scope_delete display_value="">2bb46b0be8674aac9d3deb1307567110</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_28e1c1df83316210a404e5d0deaad30e</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_28e1c1df83316210a404e5d0deaad30e">77f145df83316210a404e5d0deaad3a0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-03 03:55:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

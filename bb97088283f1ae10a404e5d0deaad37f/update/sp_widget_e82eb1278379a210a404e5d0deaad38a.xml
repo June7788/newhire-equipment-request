@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+    /* widget controller */
+    var c = this;
+	
+	//g_form is avaiable via the page from $scope. Making it shorter here.
+    var gform = $scope.page.g_form;
+
+    $scope.setTabIndex = function(index, $event) {
+        gform.setValue('current_section', index);
+        $event.target.classList.remove('btn-default');
+        $event.target.classList.add('btn-primary');
+		setActiveButton();
+    };
+
+    function setActiveButton(){
+		var activeTab = gform.getValue('current_section');
+		$('[data-tab-index="' + activeTab + '"]').removeClass('btn-default').addClass('btn-primary');
+
+		$('[data-tab-index]').filter(function(){
+			return $(this).attr('data-tab-index') != activeTab;
+		}).removeClass('btn-primary').addClass('btn-default');
+
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.btn-breadcrumb .btn:not(:last-child):after {&#13;
+  content: " ";&#13;
+  display: block;&#13;
+  width: 0;&#13;
+  height: 0;&#13;
+  border-top: 17px solid transparent;&#13;
+  border-bottom: 17px solid transparent;&#13;
+  border-left: 10px solid white;&#13;
+  position: absolute;&#13;
+  top: 50%;&#13;
+  margin-top: -17px;&#13;
+  left: 100%;&#13;
+  z-index: 3;&#13;
+}&#13;
+.btn-breadcrumb .btn:not(:last-child):before {&#13;
+  content: " ";&#13;
+  display: block;&#13;
+  width: 0;&#13;
+  height: 0;&#13;
+  border-top: 17px solid transparent;&#13;
+  border-bottom: 17px solid transparent;&#13;
+  border-left: 10px solid rgb(173, 173, 173);&#13;
+  position: absolute;&#13;
+  top: 50%;&#13;
+  margin-top: -17px;&#13;
+  margin-left: 1px;&#13;
+  left: 100%;&#13;
+  z-index: 3;&#13;
+}&#13;
+&#13;
+/** The Spacing **/&#13;
+.btn-breadcrumb .btn {&#13;
+  padding:6px 12px 6px 24px;&#13;
+  font-size:16px;&#13;
+}&#13;
+.btn-breadcrumb .btn:first-child {&#13;
+  padding:6px 6px 6px 10px;&#13;
+}&#13;
+.btn-breadcrumb .btn:last-child {&#13;
+  padding:6px 18px 6px 24px;&#13;
+}&#13;
+&#13;
+/** Default button **/&#13;
+.btn-breadcrumb .btn.btn-default:not(:last-child):after {&#13;
+  border-left: 10px solid #fff;&#13;
+}&#13;
+.btn-breadcrumb .btn.btn-default:not(:last-child):before {&#13;
+  border-left: 10px solid #ccc;&#13;
+}&#13;
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {&#13;
+  border-left: 10px solid #ebebeb;&#13;
+}&#13;
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {&#13;
+  border-left: 10px solid #adadad;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>catalog_item_section</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Catalog Item Section Controller</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-04 03:00:01</sys_created_on>
+        <sys_id>e82eb1278379a210a404e5d0deaad38a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Catalog Item Section Controller</sys_name>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_update_name>sp_widget_e82eb1278379a210a404e5d0deaad38a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-04 06:11:20</sys_updated_on>
+        <template><![CDATA[<div>
+  <div class="btn-group btn-breadcrumb" >
+    <a ng-click="setTabIndex('0',$event)" class="btn btn-default" data-tab-index="0"><i class="glyphicon glyphicon-home"></i></a>
+    <a ng-click="setTabIndex('1',$event)" class="btn btn-primary" data-tab-index="1">Section 1</a>
+    <a ng-click="setTabIndex('2',$event)" class="btn btn-default" data-tab-index="2">Section 2</a>
+    <a ng-click="setTabIndex('3',$event)" class="btn btn-default" data-tab-index="3">Section 3</a>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

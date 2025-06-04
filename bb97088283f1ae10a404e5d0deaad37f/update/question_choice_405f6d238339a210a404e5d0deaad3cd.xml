@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>200</order>
+        <published_ref/>
+        <question display_value="Laptop Model">405f6d238339a210a404e5d0deaad3a7</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-04 01:44:57</sys_created_on>
+        <sys_id>405f6d238339a210a404e5d0deaad3cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MacBook</sys_name>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_update_name>question_choice_405f6d238339a210a404e5d0deaad3cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-04 01:44:57</sys_updated_on>
+        <text>MacBook</text>
+        <value>macbook</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=405f6d238339a210a404e5d0deaad3cd"/>
+</record_update>
