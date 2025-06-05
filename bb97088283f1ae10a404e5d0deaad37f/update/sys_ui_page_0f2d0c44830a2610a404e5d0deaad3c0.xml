@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function closeWindow() {
+    GlideModal.get().destroy();
+}
+
+/**
+ * 创建一个 GlideAjax 请求，用于调用 Script Include
+ */
+function updateField() {
+    // 获取当前表单的sys_id
+    var sysId = g_form.getUniqueValue();
+
+    // 创建GlideAjax请求
+    var ga = new GlideAjax("x_206101_new_hir_0.UpdateFieldProcessor");
+    ga.addParam('sysparm_sys_id', sysId);
+    ga.addParam('sysparm_field_name', g_form.getValue('comment'));
+    ga.getXML(function(response) {
+        var answer = response.responseXML.documentElement.getAttribute('answer');
+        if (answer == 'success') {
+            // 更新成功，刷新表单中的comment字段
+			g_form.save();
+            g_form.showFieldMsg('comment', 'Comment updated successfully', 'info');
+        } else {
+            g_form.showFieldMsg('comment', 'Failed to update comment', 'error');
+        }
+        g_form.clearValue('stock');
+        g_form.setValue('stock', answer);
+        GlideModal.get().destroy();
+    });
+}]]></client_script>
+        <description>Buttons with confirmation dialog boxes</description>
+        <direct>false</direct>
+        <endpoint>x_206101_new_hir_0_UpdateFieldDialog.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <div style="padding: 25px; text-align: center; font-family: Arial, sans-serif">
+        <div><h4>Are you sure to update the comment?</h4></div>
+        <div>
+            <button id="ok_button" class="btn btn-primary uniform-button" onclick="updateField()">OK</button>
+            <button id="cancel_button" class="btn btn-default uniform-button" onclick="closeWindow()">CANCEL</button>
+        </div>
+    </div>
+    <style>
+        /* 在UI Page的CSS字段中添加 */
+        .uniform-button {
+			margin: 10px;
+            min-width: 60px !important;
+            /* 设置最小宽度 */
+            padding: 10px 25px !important;
+            /* 统一内边距 */
+            font-size: 14px !important;
+            /* 统一字体大小 */
+            line-height: 1.4 !important;
+            /* 统一行高 */
+            box-sizing: border-box !important;
+            /* 确保尺寸计算一致 */
+        }
+    </style>
+</j:jelly>]]></html>
+        <name>UpdateFieldDialog</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-05 07:55:24</sys_created_on>
+        <sys_id>0f2d0c44830a2610a404e5d0deaad3c0</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>UpdateFieldDialog</sys_name>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_update_name>sys_ui_page_0f2d0c44830a2610a404e5d0deaad3c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 16:31:41</sys_updated_on>
+    </sys_ui_page>
+</record_update>

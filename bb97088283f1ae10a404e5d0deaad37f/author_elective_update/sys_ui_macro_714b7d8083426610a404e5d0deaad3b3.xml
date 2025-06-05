@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="DELETE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>test</name>
+        <scoped_name>x_206101_new_hir_0_test</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-05 15:55:21</sys_created_on>
+        <sys_id>714b7d8083426610a404e5d0deaad3b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_update_name>sys_ui_macro_714b7d8083426610a404e5d0deaad3b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 15:55:21</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</application>
+        <file_path/>
+        <instance_id>46b46c1e1b2639dcc84543f4bd4bcb61</instance_id>
+        <instance_name>dev216198</instance_name>
+        <name>sys_ui_macro_714b7d8083426610a404e5d0deaad3b3</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_macro"&gt;&lt;sys_ui_macro action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;category&gt;general&lt;/category&gt;&lt;description/&gt;&lt;media_type/&gt;&lt;name&gt;test&lt;/name&gt;&lt;scoped_name&gt;x_206101_new_hir_0_test&lt;/scoped_name&gt;&lt;sys_class_name&gt;sys_ui_macro&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-05 15:55:21&lt;/sys_created_on&gt;&lt;sys_id&gt;714b7d8083426610a404e5d0deaad3b3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;test&lt;/sys_name&gt;&lt;sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="New Hire Equipment Request"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_macro_714b7d8083426610a404e5d0deaad3b3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-05 15:55:21&lt;/sys_updated_on&gt;&lt;xml&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+
+&lt;/j:jelly&gt;]]&gt;&lt;/xml&gt;&lt;/sys_ui_macro&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-873308837</payload_hash>
+        <record_name>test</record_name>
+        <reverted_from/>
+        <source>c3b332ab837da210a404e5d0deaad38a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-05 15:55:21</sys_created_on>
+        <sys_id>c38bf1c083426610a404e5d0deaad30c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19740cdd7810000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 15:55:21</sys_updated_on>
+        <type>Macro</type>
+        <update_guid>cf8b35ccdc0266108131b40fc176f277</update_guid>
+        <update_guid_history>cf8b35ccdc0266108131b40fc176f277:-873308837</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-05 15:59:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_macro">sys_ui_macro</sys_db_object>
+        <sys_id>3f31ae7b7602421cb43913c037039409</sys_id>
+        <sys_metadata>714b7d8083426610a404e5d0deaad3b3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_scope_delete display_value="">2bb46b0be8674aac9d3deb1307567110</sys_scope_delete>
+        <sys_update_name>sys_ui_macro_714b7d8083426610a404e5d0deaad3b3</sys_update_name>
+        <sys_update_version display_value="sys_ui_macro_714b7d8083426610a404e5d0deaad3b3">c38bf1c083426610a404e5d0deaad30c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 15:59:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
