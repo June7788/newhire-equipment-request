@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections action="DELETE" form_id="b6898cc0830a2610a404e5d0deaad3f1" sys_domain="global" table="x_206101_new_hir_0_equipment_request" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-05 07:37:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7289ccc0830a2610a404e5d0deaad34c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_206101_new_hir_0_equipment_request" name="x_206101_new_hir_0_equipment_request" sys_domain="global" view="5bd975bd0fa03200cd674f8ce1050e7f">b6898cc0830a2610a404e5d0deaad3f1</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_206101_new_hir_0_equipment_request" sys_domain="global" view="5bd975bd0fa03200cd674f8ce1050e7f">fa898cc0830a2610a404e5d0deaad3ee</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-05 07:37:16</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-05 07:37:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7e89ccc0830a2610a404e5d0deaad34c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_206101_new_hir_0_equipment_request" name="x_206101_new_hir_0_equipment_request" sys_domain="global" view="5bd975bd0fa03200cd674f8ce1050e7f">b6898cc0830a2610a404e5d0deaad3f1</sys_ui_form>
+            <sys_ui_section caption="Additional" display_value="Additional" name="x_206101_new_hir_0_equipment_request" sys_domain="global" view="5bd975bd0fa03200cd674f8ce1050e7f">f2898cc0830a2610a404e5d0deaad3f0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-05 07:37:16</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_206101_new_hir_0_equipment_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-05 07:37:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b6898cc0830a2610a404e5d0deaad3f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_206101_new_hir_0_equipment_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+            <sys_update_name>sys_ui_form_sections_b6898cc0830a2610a404e5d0deaad3f1</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-05 07:37:15</sys_updated_on>
+            <sys_user/>
+            <view display_value="User" name="User">5bd975bd0fa03200cd674f8ce1050e7f</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</application>
+        <file_path/>
+        <instance_id>46b46c1e1b2639dcc84543f4bd4bcb61</instance_id>
+        <instance_name>dev216198</instance_name>
+        <name>sys_ui_form_sections_b6898cc0830a2610a404e5d0deaad3f1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_form_sections form_id="b6898cc0830a2610a404e5d0deaad3f1" sys_domain="global" table="x_206101_new_hir_0_equipment_request" version="3"><sys_ui_form_section action="INSERT_OR_UPDATE"><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-05 07:37:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7289ccc0830a2610a404e5d0deaad34c</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_206101_new_hir_0_equipment_request" name="x_206101_new_hir_0_equipment_request" sys_domain="global" view="5bd975bd0fa03200cd674f8ce1050e7f">b6898cc0830a2610a404e5d0deaad3f1</sys_ui_form><sys_ui_section caption="NULL" display_value="" name="x_206101_new_hir_0_equipment_request" sys_domain="global" view="5bd975bd0fa03200cd674f8ce1050e7f">fa898cc0830a2610a404e5d0deaad3ee</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-05 07:37:16</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-05 07:37:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7e89ccc0830a2610a404e5d0deaad34c</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_206101_new_hir_0_equipment_request" name="x_206101_new_hir_0_equipment_request" sys_domain="global" view="5bd975bd0fa03200cd674f8ce1050e7f">b6898cc0830a2610a404e5d0deaad3f1</sys_ui_form><sys_ui_section caption="Additional" display_value="Additional" name="x_206101_new_hir_0_equipment_request" sys_domain="global" view="5bd975bd0fa03200cd674f8ce1050e7f">f2898cc0830a2610a404e5d0deaad3f0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-05 07:37:16</sys_updated_on></sys_ui_form_section><sys_ui_form action="INSERT_OR_UPDATE"><name>x_206101_new_hir_0_equipment_request</name><roles/><sys_class_name>sys_ui_form</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-05 07:37:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b6898cc0830a2610a404e5d0deaad3f1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_206101_new_hir_0_equipment_request</sys_name><sys_overrides/><sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package><sys_policy/><sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope><sys_update_name>sys_ui_form_sections_b6898cc0830a2610a404e5d0deaad3f1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-05 07:37:15</sys_updated_on><sys_user/><view display_value="User" name="User">5bd975bd0fa03200cd674f8ce1050e7f</view><view_name/></sys_ui_form></sys_ui_form_sections></record_update>]]></payload>
+        <payload_hash>1989438422</payload_hash>
+        <record_name>Equipment Request</record_name>
+        <reverted_from/>
+        <source>c3b332ab837da210a404e5d0deaad38a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-05 07:37:16</sys_created_on>
+        <sys_id>3e89ccc0830a2610a404e5d0deaad34e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1973f05d5740000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 07:37:16</sys_updated_on>
+        <type>Form Sections</type>
+        <update_guid>f289ccc0910a2610f69a8431ed87a44e</update_guid>
+        <update_guid_history>f289ccc0910a2610f69a8431ed87a44e:1989438422,ba89ccc0cc0a261044a53f9e3b41ef4a:1235933139</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 01:37:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_form">sys_ui_form</sys_db_object>
+        <sys_id>2d49848d3dad43f698556f0550b10bf9</sys_id>
+        <sys_metadata>b6898cc0830a2610a404e5d0deaad3f1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_206101_new_hir_0_equipment_request</sys_name>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_parent display_value="New Hir 0 Equipment Request">9a7888c283f1ae10a404e5d0deaad35b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_scope_delete display_value="">2bb46b0be8674aac9d3deb1307567110</sys_scope_delete>
+        <sys_update_name>sys_ui_form_sections_b6898cc0830a2610a404e5d0deaad3f1</sys_update_name>
+        <sys_update_version display_value="sys_ui_form_sections_b6898cc0830a2610a404e5d0deaad3f1">3e89ccc0830a2610a404e5d0deaad34e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 01:37:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

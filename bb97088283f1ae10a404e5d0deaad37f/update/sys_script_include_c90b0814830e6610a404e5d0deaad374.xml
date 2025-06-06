@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_206101_new_hir_0.ExcelParserProcessor</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>ExcelParserProcessor</name>
+        <sandbox_callable>true</sandbox_callable>
+        <script><![CDATA[var ExcelParserProcessor = Class.create();
+ExcelParserProcessor.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    excelParse: function() {
+        var mrvs = [];
+        var attid = this.getParameter('sysparm_attachment');
+        var parser = new sn_impex.GlideExcelParser();
+        var attachment = new GlideSysAttachment();
+        var attachmentStream = attachment.getContentStream(attid);
+        parser.setSource(attachmentStream);
+        var list_sheet_name = parser.getSheetNames();
+        for (var i = 0; i < list_sheet_name.length; i++) {
+            parser.setSheetName(list_sheet_name[i]);
+            if (parser.parse()) {
+                //retrieve the column headers
+                var headers = parser.getColumnHeaders();
+                var header1 = headers[0];
+                var header2 = headers[1];
+                var header3 = headers[2];
+                // Iterate over each row in the worksheet
+                while (parser.next()) {
+                    var row = parser.getRow();
+                    mrvs.push({
+                        'name': row[header1],
+                        'job_title': row[header2],
+                        'email': row[header3]
+                    });
+                    //print row value for both columns
+                    gs.addInfoMessage(row[header1] + '\t|| ' + row[header2] + '\t||' + row[header3]);
+                }
+            }
+        }
+        return JSON.stringify(mrvs);
+    },
+
+    type: 'ExcelParserProcessor'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 02:30:48</sys_created_on>
+        <sys_id>c90b0814830e6610a404e5d0deaad374</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>ExcelParserProcessor</sys_name>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_update_name>sys_script_include_c90b0814830e6610a404e5d0deaad374</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 04:43:26</sys_updated_on>
+    </sys_script_include>
+</record_update>
