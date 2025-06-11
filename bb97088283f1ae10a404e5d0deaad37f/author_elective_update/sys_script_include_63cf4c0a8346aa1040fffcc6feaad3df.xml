@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_206101_new_hir_0.ResubmitProcessor</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Update sc_req_item table, set request_status to resubmitted</description>
+        <mobile_callable>false</mobile_callable>
+        <name>ResubmitProcessor</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var ResubmitProcessor = Class.create();
+ResubmitProcessor.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    process: function() {
+
+        gs.addInfoMessage("sc_req_item begins to update.");
+
+        var sysId = this.getParameter('sysparm_sys_id');
+        // var fieldName = this.getParameter('sysparm_field_name');
+
+        // 获取目标记录并更新字段
+        var record = new GlideRecord('sc_req_item');
+        // if (record.get(sysId)) {
+        if (record.get("number", "RITM0010017")) {
+            record.setValue('request_status', "resubmitted"); // 替换新值
+            record.update(); // 更新记录
+
+            gs.addInfoMessage("sc_req_item update success.");
+            return 'success'; // 返回成功
+        }
+        return 'failure'; // 如果没有找到记录，返回失败
+    },
+
+    type: 'ResubmitProcessor'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-11 13:27:00</sys_created_on>
+        <sys_id>63cf4c0a8346aa1040fffcc6feaad3df</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ResubmitProcessor</sys_name>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_update_name>sys_script_include_63cf4c0a8346aa1040fffcc6feaad3df</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-11 14:25:50</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</application>
+        <file_path/>
+        <instance_id>c7351b74fbec6218363cf633beefdc83</instance_id>
+        <instance_name>dev310272</instance_name>
+        <name>sys_script_include_63cf4c0a8346aa1040fffcc6feaad3df</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_206101_new_hir_0.ResubmitProcessor&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;Update sc_req_item table, set request_status to resubmitted&lt;/description&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;ResubmitProcessor&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var ResubmitProcessor = Class.create();
+ResubmitProcessor.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    process: function() {
+
+        gs.addInfoMessage("sc_req_item begins to update.");
+
+        var sysId = this.getParameter('sysparm_sys_id');
+        // var fieldName = this.getParameter('sysparm_field_name');
+
+        // 获取目标记录并更新字段
+        var record = new GlideRecord('sc_req_item');
+        // if (record.get(sysId)) {
+        if (record.get("number", "RITM0010017")) {
+            record.setValue('request_status', "resubmitted"); // 替换新值
+            record.update(); // 更新记录
+
+            gs.addInfoMessage("sc_req_item update success.");
+            return 'success'; // 返回成功
+        }
+        return 'failure'; // 如果没有找到记录，返回失败
+    },
+
+    type: 'ResubmitProcessor'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-11 13:27:00&lt;/sys_created_on&gt;&lt;sys_id&gt;63cf4c0a8346aa1040fffcc6feaad3df&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;ResubmitProcessor&lt;/sys_name&gt;&lt;sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="New Hire Equipment Request"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_63cf4c0a8346aa1040fffcc6feaad3df&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-11 14:25:50&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-259832076</payload_hash>
+        <record_name>ResubmitProcessor</record_name>
+        <reverted_from/>
+        <source>17f211548302a21040fffcc6feaad3b3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-11 14:25:50</sys_created_on>
+        <sys_id>d690680283c6aa1040fffcc6feaad318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1975f620c2c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-11 14:25:50</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>5e906802ddc6aa104a9c826bd63f5717</update_guid>
+        <update_guid_history>5e906802ddc6aa104a9c826bd63f5717:-259832076,511ed8ce7c86aa10c5cabdd597e56739:1388624633,052390422286aa108b15c43173797455:-963954682</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-11 14:51:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>c264ba8b153c42949e1fd778cd4e67d1</sys_id>
+        <sys_metadata>63cf4c0a8346aa1040fffcc6feaad3df</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ResubmitProcessor</sys_name>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_scope_delete display_value="">2bb46b0be8674aac9d3deb1307567110</sys_scope_delete>
+        <sys_update_name>sys_script_include_63cf4c0a8346aa1040fffcc6feaad3df</sys_update_name>
+        <sys_update_version display_value="sys_script_include_63cf4c0a8346aa1040fffcc6feaad3df">d690680283c6aa1040fffcc6feaad318</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-11 14:51:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

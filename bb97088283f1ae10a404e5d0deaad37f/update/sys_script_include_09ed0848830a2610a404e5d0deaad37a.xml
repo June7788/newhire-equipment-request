@@ -12,13 +12,15 @@
         <script><![CDATA[var UpdateFieldProcessor = Class.create();
 UpdateFieldProcessor.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
     process: function() {
+        var tableName = this.getParameter('sysparm_table_name');
         var sysId = this.getParameter('sysparm_sys_id');
         var fieldName = this.getParameter('sysparm_field_name');
+        var fieldValue = this.getParameter('sysparm_field_value');
 
         // 获取目标记录并更新字段
-        var record = new GlideRecord('x_206101_new_hir_0_equipment_request');
+        var record = new GlideRecord(tableName);
         if (record.get(sysId)) {
-            record.setValue('comment', fieldName); // 替换新值
+            record.setValue(fieldName, fieldValue); // 替换新值
             record.update(); // 更新记录
             return 'success'; // 返回成功
         }
@@ -31,13 +33,13 @@ UpdateFieldProcessor.prototype = Object.extendsObject(global.AbstractAjaxProcess
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-05 08:14:03</sys_created_on>
         <sys_id>09ed0848830a2610a404e5d0deaad37a</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>UpdateFieldProcessor</sys_name>
         <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
         <sys_update_name>sys_script_include_09ed0848830a2610a404e5d0deaad37a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-05 16:30:27</sys_updated_on>
+        <sys_updated_on>2025-06-11 15:02:49</sys_updated_on>
     </sys_script_include>
 </record_update>

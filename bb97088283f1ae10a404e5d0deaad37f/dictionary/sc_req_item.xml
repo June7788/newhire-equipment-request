@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="global_search_config_handler=RequestItemSearchConfig,hasWorkflow=true" audit="true" create_roles="catalog_admin" db_object_id="fc7777625cc022105590c762d23e6353" extends="task" label="Requested Item" max_length="40" name="sc_req_item" text_index="true" type="collection">
+        <element choice="3" default="submitted" display="true" label="Request Status" max_length="40" name="x_206101_new_hir_0_request_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Submitted" value="submitted"/>
+                <element inactive_on_update="false" label="Approved" value="approved"/>
+                <element inactive_on_update="false" label="Rejected" value="rejected"/>
+                <element inactive_on_update="false" label="Resubmitted" value="resubmitted"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Handles request submission, approval, rejection, and resubmission</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>catelog_request__resubmission_flow</internal_name>
+        <label_cache>[{"name":"11c4af6f-75a7-4f7d-b8d9-68350981abaa.Record","label":"1 - Look Up Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item Record","type":"reference","base_type":"reference","usedInstances":{"44762fb7-409b-49bb-a554-b62e5c382f07":["record"],"1323bc0c-bd9f-4dda-8c30-db9cc3dcf8a8":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item.sys_id","label":"Trigger - Service Catalog➛Requested Item Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_req_item","column_name":"sys_id","usedInstances":{"11c4af6f-75a7-4f7d-b8d9-68350981abaa":["conditions"]}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"3564a8af-cd3d-48e3-8ee4-1b05101084ae":["ah_requested_item"]},"attributes":{"default_search_field":"number"}},{"name":"Service Catalog_1.request_item.request","label":"Trigger - Service Catalog➛Requested Item Record➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request","usedInstances":{"6b8f7d2b-cd74-4458-862d-cee95cdc7f9e":["record"]}},{"name":"{{static.681b365ec0a80164000fb0b05854a0cd}}","label":"ITIL User","reference":"sys_user","type":"reference","base_type":"reference","usedInstances":{"6b8f7d2b-cd74-4458-862d-cee95cdc7f9e":["approval_conditions"]}},{"name":"6b8f7d2b-cd74-4458-862d-cee95cdc7f9e.approval_state","label":"3 - Ask For Approval➛Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"7a548bf4-f5bc-4afe-a08d-010722b80e92":["condition"],"568ce4d2-865e-4406-b0bd-73e198b47965":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Catalog Request - Resubmission Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-09 01:54:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5a512f018386a61040fffcc6feaad3e7</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Catalog Request - Resubmission Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_update_name>sys_hub_flow_5a512f018386a61040fffcc6feaad3e7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-09 09:24:23</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=5a512f018386a61040fffcc6feaad3e7"/>
+    <sys_variable_value action="DELETE" query="document_key=5a512f018386a61040fffcc6feaad3e7"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=5a512f018386a61040fffcc6feaad3e7"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=5a512f018386a61040fffcc6feaad3e7^sys_idNOT IN1e512f018386a61040fffcc6feaad3ea"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>5a512f018386a61040fffcc6feaad3e7</id>
+        <name>Catelog Request - Resubmission Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-09 01:54:03</sys_created_on>
+        <sys_id>1e512f018386a61040fffcc6feaad3ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-09 01:54:03</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=1e512f018386a61040fffcc6feaad3ea"/>
+    <sys_hub_flow_input action="DELETE" query="model=5a512f018386a61040fffcc6feaad3e7^sys_idNOT INa44b6fcd8386a61040fffcc6feaad3bc,a84b6fcd8386a61040fffcc6feaad3b4"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Catalog Request - Resubmission Flow">5a512f018386a61040fffcc6feaad3e7</model>
+        <model_id>5a512f018386a61040fffcc6feaad3e7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5a512f018386a61040fffcc6feaad3e7</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-09 02:37:21</sys_created_on>
+        <sys_id>a44b6fcd8386a61040fffcc6feaad3bc</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-09 09:24:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=a44b6fcd8386a61040fffcc6feaad3bc"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Catalog Request - Resubmission Flow">5a512f018386a61040fffcc6feaad3e7</model>
+        <model_id>5a512f018386a61040fffcc6feaad3e7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5a512f018386a61040fffcc6feaad3e7</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-09 02:37:20</sys_created_on>
+        <sys_id>a84b6fcd8386a61040fffcc6feaad3b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-09 02:37:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=a84b6fcd8386a61040fffcc6feaad3b4"/>
+    <sys_hub_flow_output action="DELETE" query="model=5a512f018386a61040fffcc6feaad3e7"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=5a512f018386a61040fffcc6feaad3e7"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=5a512f018386a61040fffcc6feaad3e7^sys_idNOT INfc4bafcd8386a61040fffcc6feaad31c"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Catalog Request - Resubmission Flow">5a512f018386a61040fffcc6feaad3e7</flow>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-09 02:37:22</sys_created_on>
+        <sys_id>fc4bafcd8386a61040fffcc6feaad31c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-09 03:31:14</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61TTW/bMAz9K4FOG5CDk6zNktswoECAbgWarpdiMGSJcoTJkifJbr2g/32kPxK3M4YB3U2iyMfHx6eHIzM8A8O27LaysyvjHmc7y+ZM2wjecnPXlICP4uC0AIx3h2sdIts+HJm656aihIyLH7l3lZWYpK5HmIowtZ2dM2bvJChemfiecncFzwmBznswICJItlXcBMDItzC+fdEhaJv3gef5iIByHv5O4GXGG9p+n7OCW8mj8805ybviDorS8AinoPMSPNsukmTOaiK6b8JOdl0tL6i/r2xKDFNNstf9NHiUOiBYc3+OiIM20oNF5ZFCyT0iRMI/vnrS1OIy2SRivdys18tktUoSdZEpoYRYf1wkl4uLDQJOr36SWHzlg/Fk8BTBypFgf6rjgcsba86BAxqsm6rgT0H/QvAPCeUpwDFEP/HpmvZqDEIQi9A60Py71eopr/aDJGSmKawXrqmnzDZIQb7ou33+/wQXbya4JIKddDdl1A7Nwla0Wp4ZqglN6BbuQWBJGr3OcyzEImeqwn6d8kXPfuTSKuC2oCRH0IqH77E/uMfbYZ1X2raU+kfjBDenG4/YOasi6XdkXNYcK8jR0WOP59YV6c+KKtp/MvRK24koIQivy/hJRF3D6dP+BvLQA67rBAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=5a512f018386a61040fffcc6feaad3e7^sys_idNOT IN17238d11838ea61040fffcc6feaad3bf,8768c9d5838ea61040fffcc6feaad301,c368c9d5838ea61040fffcc6feaad300"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Catalog Request - Resubmission Flow">5a512f018386a61040fffcc6feaad3e7</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-09 09:01:28</sys_created_on>
+        <sys_id>17238d11838ea61040fffcc6feaad3bf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-09 09:24:23</sys_updated_on>
+        <ui_id>11c4af6f-75a7-4f7d-b8d9-68350981abaa</ui_id>
+        <values>H4sIAAAAAAAA/9VYW2/iOhD+K1GeKZtwC/TtqBVSpd2ttO3uS09lObED1ho7tR26FPHfdxwnQCFcSllt99HjuXwz883g8DD3GfEvfTIIBulg0O1HQdBuB0Gv105wGMftXhIHMe74DV/gCQVNg2NO4TjFPLdnnSBFnxAzdAJSwnTG8exHefmNPuVUG0q8G3efjBknigr/8uGx4WdYgVNDlX8537gys4wijmPKwc29jel9tQAaR+N9ZbyN3waojkg411IRiyVo+PSXoYJQCJVirmnDn2BBsJFqtpQoismt4CvBmAkDHn2r/EuzF3DfD6xeSiGthLq75RGVtXLiZCxZQm8zw6RwEgfUXUqeT8RXl4CtMk1xzk1VZZDkGvzRzGK2IEpE6d1YPn+rAg6ZKNIrL7lMMF+esDGKxbmh2vaCcjoBR2iCs4yJEcqUnLLCGLBMmiMOh2bK5TME1WwkmjixwJtQItwcgvy6EP/AitksvoAbMAZAjEO3kSu6lrkqqjJFCc91caGw0M6XvyhqhZ5yi9JlXeaHXIlAQSeKZeY/MJjSMpVFo6J0dy9FBitKJFIQZmPqdV7PNGLk/xyMyXx+R9UU+uNdQYJcjlDYVI7aBfGbTnmx2J6AU92cNihX65kcW4Va47rSlCPzSlaOTHi2kekEwV8aGqPyjzczh6bAJXxgFEKylwRk1W8tlUGucmuzsE3rkxk6ZJSTV6v8CHCV8a0lmxfPduEtCZraGBs7vfXP7/QPSU8ARJCrNxOcieInFYCeh7fdvdSIww0eFO1f2+BWhnWyzV7sGem9nL5li75W/D0CZGV4B4i8e4eyBni1Xyv3JXXbZ6Nuu/U26gJxHuZL9Muq1RS4ejnZ1lX6L1Yfb+oDu9YMwsXjkvpXp8UM3xqzZWNuzGb7TcO5zix3c72DYGd+l+0YtsafnO4xmJbxkBtW9MzIiJpV9EqLSPOM+c+6+5Jdyxkq0nv3Gy/c+xkQr73xWIom0CeWwcNT0QSooBFWFKUyFwSVT84VbWzfUqbgYeaU6z5tTK6EJ2HkPDOmXqHtLbXPsVmOyK4yvEm9Kr0Sg/YgPa9Iz1um97Zi7NhHnTO+9d6zj4aY8aL08OmQrfWOKiXVjp10oGt72n/kwjoSVHhWUO/faHV8r91sB7D+E9+h7906CcVxp4V7UTsMgyAMSBT0oyjs9+K0h6NOuho0hLRIYC2C5xSIAe5RRYSqq8H2anG78eQ/S2DnfhqWLo7FWxlfS2G/VVuR8Sxg6LNXAT6cUrkvYik5xWJFz+5fWxgf5f+UnN1v1saJPtc17U/9mOfsu2BPOb2xpOjToNUPSXLRj8LoopOS3sWA4O4FHsTdqE1o0klP/31+/A3EXJo1WBQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Catalog Request - Resubmission Flow">5a512f018386a61040fffcc6feaad3e7</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-09 09:24:23</sys_created_on>
+        <sys_id>8768c9d5838ea61040fffcc6feaad301</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-09 09:24:23</sys_updated_on>
+        <ui_id>6b8f7d2b-cd74-4458-862d-cee95cdc7f9e</ui_id>
+        <values>H4sIAAAAAAAA/+1Y4W/aOhD/V1A+U55DSBr4Vq2qtKf33iba7UupIse5gCfjsNihY4j/fefEgRTaDCGmrtP7gnRn393v7n5nx9yvHZ44I+cyTPswHPZJ7BLiERL6jIQexN5lcOlRRpyuI+kccGcOLMsTlJdUFEaxXt9CvuQMOu+opiKbRm4vh68FKB1xDfNa2GzQKOFqIejqs7VFDZtxkeQgndH9Q9dZ0BzDaMid0XpvSa8WEAkag0DD64wVc5C68/4afRybQm09rnPYz8nEQDmx3iNulLhk8JCuA980yAQwWkqFgq4zpzKhOstXzkjnBSpyoMkHKVbbHTMudZXonH5T/Du69/pmXwqYGbNF2IqRLVBdmwzr+mGheSYrjaaxqAuXiWIu/6syMKWFlBZCN0pbKPQHCwPZgKgQprez7HFcx7vhskzOohUZo2IrUa1zHhcalOkGCChrMqeLBZfTaJFnS14aI5R5bypQ6KUie8SYik9ljzKDu4cFor0b1F+X6s805yaJf9ENGm/K5KOvhYlbpWEBR2XOVcK4S7GcL/QV+lyCRbjpWvbGrLX1bNfpyt2OvIpFlp6H5BxvF07j6J2J1Skb1D0a5xPjQ9yWoKUYycq15afbzk+rOYagIXkdglpEb4yhPyMnDALPx5/L1CNu3yUhBGHIhoSyMAj8gbdrMsZDxFQgJalC3zuafhSogU4OSw6PHT3jqmNp2zvkbfvm07h8i3WW05rHR6RUG17ZnDrjOqcXk7XcVnUoy+v+2XjtBm+U2AW/w9r8s9+LX8P3rg3XbEXBP0mOFHpvuh/042BIwuQiSUl8MQg9/4IyIBcQuD74ScB81zt1amqlyXqfIah6bs4220kjbtvxmoTPkC/lIJofM/XC4VQ1Vk4boRsT6sl1cATegzG6sYBfSsQOUSnuXRDnG6SQkFeapD/3G4a1kgEa18SXrMhlC3cjPPHLlr7I4caOc3H5CPi18d8V/n0q76fVwmTvfyb/xkwe+K1UgGdOL5bJhBt8qsHn6swDNYYvwLS6kqtP9+u10lRz1gtCN/YCHxihIXGDAfYxjUlM/NAfUMKSzebhkP9n8HjavOy+ggoBqp6ZIwq1fbFau9bC2YnZ3ZvWyE7N4FwP2Ncbmj/zhcBaeZAOd31PCiwH1c0X7HriVCAnzmjiyEzCxOlOHLMrMoQo1bgDwW0XSt16vdlUmiKn1oHbEHfWCV2pcqdiM0iQVKX2iaZiutWf84+eWxugc424/7rjjRvn51Xb/ltUVPbPFrJ+dtSZVJXjzfvGP9t9M3ijg1PwaPsBjNcAHhW/7P1x6jQ9/ADsPgL8zBQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Catalog Request - Resubmission Flow">5a512f018386a61040fffcc6feaad3e7</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-09 09:24:23</sys_created_on>
+        <sys_id>c368c9d5838ea61040fffcc6feaad300</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-09 09:24:23</sys_updated_on>
+        <ui_id>1323bc0c-bd9f-4dda-8c30-db9cc3dcf8a8</ui_id>
+        <values>H4sIAAAAAAAA/+1UW2vbMBT+K8HPSZDi3N8GpdCHtZCNvnRFHFvHjUCWXUnOZSH/fZItp+llXQiBMZjfzrHOdzn60MMuEjyaR0PkhM7oOI1pHA8IGUyHNBnHCR3wGBBp1I0U5OhOakwLzV29Aln5xm5HaTqEbJz1JiOY9IbZhPeSKZ/1xtN4RGZTCglAf1HP7fdukgtTStjeBwDXSZdCco0qmj88dqMStOOyqKP57s0vuy2RSUhQusGrIq1yVLZzc+UwTvXRTi9aI2+NeQ5X84DOhG+6X14PJd0INxYVR0eXgTTYjXJQHGyht9Hc6so1NAK/U3J7OLEUyjZOc9gY8dPhD4k/l6GzloYtHEoWNtQupxAp3pVWFKrpWEhku7lCVrm6bSz43WIGlbRHu62Mw8PSS/YiGoXZt2WxXrR810LV7oJaWaQgDxVYq0VSWTT+OlBivZQcylKoJ1bqYiXqYScl7z9JV/QzWawdpxFPqg+p1913C4L+tetf1e170MKb+Opg3PC+Ns+eK8/b2AiCWe25Nszqi3JHTapFab844BUGmftuCHIy+iwA6ezlvo8wX8JsUqbxmQmL+fugLvC5QmORd26a/+fF9rsn7tw2xKeKfjX8GxMhuK96Ibeji+V2+pdyGxT9Y8H9U1zJ4NP36uim64Sao6hu2ICMKaFM4ZothWbER9cHlBkLtjI/KkJibqokF8b4O3gX6HMgzsw85o7YYqeh7p7svgW4Fii5+WAdbegDAVsFgsODfbHk0zGpv//v9gXf7cdfMeFeSYIIAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=5a512f018386a61040fffcc6feaad3e7"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=5a512f018386a61040fffcc6feaad3e7^sys_idNOT IN0768c9d5838ea61040fffcc6feaad304,8b68c9d5838ea61040fffcc6feaad302"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">0f68c9d5838ea61040fffcc6feaad303</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Catalog Request - Resubmission Flow">5a512f018386a61040fffcc6feaad3e7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-09 09:24:23</sys_created_on>
+        <sys_id>0768c9d5838ea61040fffcc6feaad304</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-09 09:24:23</sys_updated_on>
+        <ui_id>568ce4d2-865e-4406-b0bd-73e198b47965</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnWdDD8usWtAhQoG2AJMilDQSKXNlsKFIlqTiu4X/vUg/HSG3UKHLsTZxd7s4sZ6Ed0Y2rG2fv9ZW1YqXI8ttjQITyGH7viOBkScqIlvGCxSxNpmkSRcl8EhfTtIgTnlKgKQmIohVgJtOKCye0ylsgIM9UNj5A69poPIwctU8jYUe38AOYA445XNha0u3DBalsLSQ30POsqcEuDgxZ7t6E3LaGXNICJFa8c0aoFV6/VM1w8cMgZ/S5Rc7r9P0Qt0MnbbinFUcBgRcHiiP9ZUmlhYBUVHHqtNkeEAOU3yj5CqyFcliO+OQXK35h7STLfGIJqJFBFzwc836GHczWWjC4qT3BDnG0kP0dpmVTqa+dDj99KGkj3TB9RBqL9aD2pD2LnlJ5t9ab26HhtVCtwD4oNaPycKIOx1A0Dqx/GJBQYaG8wofF4eT+dUV7GblU4UriISyl3mBT78GQMk88xBnR8Brxjy38QI3wKr5gGbzc0SyoFSxv/YrlnEEJ+3Ys+c/GE+oE9lLybhqYYJkRtbvCPs/Qs94HvdkXNCuzOMpO22MyPWGCI5/vdtNiXs54UowZn03Gk0k2H8+nCR8zgEXGOJuVCwgHj+fWUQf7/fcmilJ077mdeK+y77E/Fwzoj/05PbQzS5P8ZWn8M1+4M1EU/V+a46URNu/M32trm//zzjx643cdbOcbDkxYJHLvsU/Df8QHtmgAwY6hjTZPXsIrtv8NdLW9+JEGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">4f68c9d5838ea61040fffcc6feaad301</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Catalog Request - Resubmission Flow">5a512f018386a61040fffcc6feaad3e7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-09 09:24:23</sys_created_on>
+        <sys_id>8b68c9d5838ea61040fffcc6feaad302</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-09 09:24:23</sys_updated_on>
+        <ui_id>7a548bf4-f5bc-4afe-a08d-010722b80e92</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnWdDD8utmtAhQoG2AJsilDYQVubKJUKIqUnFcw//epR6OkdqoUeTYmzi73J1ZzkJ7phtbNdbc65Uxcl2y5fdHj8nSYfS9Z1KwJcsDyMMFD3kcTeMoCKL5JMymcRZGIgaEmHmshAIpk+tSSCt1mbaAx55BNS4AVVVrOowsmKeRNKNVC6CgHCFNpWD3cEUq30glaux5VlBTF4s1W+7fhOyuwlRBhooq3tlalmu6fq2a4eKHQc7oc4tc1un6EW6GTroWjlYYeAxfLJaC6C9zUAY9VkApwOp6d0RqBHFbqldgI0tL5ZhLfjHyF9WOksQl5kgaOXbB4zHtZ9jBfKMlx9vKEewQC5nq73CtmqL82ulw08ccGmWH6RPSGKqHlSPtWPSU8ruN3n4bGt7IshXYB5XmoI4nsDSGrLFo3MOgwoIKpQU9LA0ndY8p28vEpfDXig5+rvSWmjoP+sAdcZ9mBP4N4R9b+AFq6VR8oTJ0uaOZgZE8bf1K5WxNEg7tWNKfjSPUCeylpN00KMHwWlZ2RX2esWd98HqzLyDJkzBIzttjMj1jghOf7/fTbJ7PRJSNuZhNxpNJMh/Pp5EYc8RFwgWf5Qv0B4+nxoLFw+FHEwSxgIs78V5l32N/rhjQH/tzfmgXlib6y9K4Z75yZ4Ig+L80p0sjTdqZv9fWNv/nnXl0xu86mM43Ark0ROTeYZ+G/4gL7MgAkp9CW10/OQmv2OE3sLy10pEGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=5a512f018386a61040fffcc6feaad3e7"/>
+    <sys_hub_flow_variable action="DELETE" query="model=5a512f018386a61040fffcc6feaad3e7"/>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5a512f018386a61040fffcc6feaad3e7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-09 02:37:21</sys_created_on>
+        <sys_id>284b6fcd8386a61040fffcc6feaad3cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-09 02:37:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5a512f018386a61040fffcc6feaad3e7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-09 02:37:21</sys_created_on>
+        <sys_id>604b6fcd8386a61040fffcc6feaad3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-09 02:37:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_5a512f018386a61040fffcc6feaad3e7"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_5a512f018386a61040fffcc6feaad3e7"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=5a512f018386a61040fffcc6feaad3e7"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=5a512f018386a61040fffcc6feaad3e7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</application>
+        <file_path/>
+        <instance_id>c7351b74fbec6218363cf633beefdc83</instance_id>
+        <instance_name>dev310272</instance_name>
+        <name>sys_hub_flow_5a512f018386a61040fffcc6feaad3e7</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;27000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description&gt;Handles request submission, approval, rejection, and resubmission&lt;/description&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source/&gt;&lt;internal_name&gt;catelog_request__resubmission_flow&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"11c4af6f-75a7-4f7d-b8d9-68350981abaa.Record","label":"1 - Look Up Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item Record","type":"reference","base_type":"reference","usedInstances":{"44762fb7-409b-49bb-a554-b62e5c382f07":["record"],"1323bc0c-bd9f-4dda-8c30-db9cc3dcf8a8":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item.sys_id","label":"Trigger - Service Catalog➛Requested Item Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_req_item","column_name":"sys_id","usedInstances":{"11c4af6f-75a7-4f7d-b8d9-68350981abaa":["conditions"]}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"3564a8af-cd3d-48e3-8ee4-1b05101084ae":["ah_requested_item"]},"attributes":{"default_search_field":"number"}},{"name":"Service Catalog_1.request_item.request","label":"Trigger - Service Catalog➛Requested Item Record➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request","usedInstances":{"6b8f7d2b-cd74-4458-862d-cee95cdc7f9e":["record"]}},{"name":"{{static.681b365ec0a80164000fb0b05854a0cd}}","label":"ITIL User","reference":"sys_user","type":"reference","base_type":"reference","usedInstances":{"6b8f7d2b-cd74-4458-862d-cee95cdc7f9e":["approval_conditions"]}},{"name":"6b8f7d2b-cd74-4458-862d-cee95cdc7f9e.approval_state","label":"3 - Ask For Approval➛Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"7a548bf4-f5bc-4afe-a08d-010722b80e92":["condition"],"568ce4d2-865e-4406-b0bd-73e198b47965":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Catalog Request - Resubmission Flow&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-09 01:54:03&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5a512f018386a61040fffcc6feaad3e7&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;Catalog Request - Resubmission Flow&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="New Hire Equipment Request"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_5a512f018386a61040fffcc6feaad3e7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-09 09:24:23&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5a512f018386a61040fffcc6feaad3e7"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=5a512f018386a61040fffcc6feaad3e7"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=5a512f018386a61040fffcc6feaad3e7"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=5a512f018386a61040fffcc6feaad3e7^sys_idNOT IN1e512f018386a61040fffcc6feaad3ea"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;5a512f018386a61040fffcc6feaad3e7&lt;/id&gt;&lt;name&gt;Catelog Request - Resubmission Flow&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-09 01:54:03&lt;/sys_created_on&gt;&lt;sys_id&gt;1e512f018386a61040fffcc6feaad3ea&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-09 01:54:03&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1e512f018386a61040fffcc6feaad3ea"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=5a512f018386a61040fffcc6feaad3e7^sys_idNOT INa44b6fcd8386a61040fffcc6feaad3bc,a84b6fcd8386a61040fffcc6feaad3b4"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;sc_req_item&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Catalog Request - Resubmission Flow"&gt;5a512f018386a61040fffcc6feaad3e7&lt;/model&gt;&lt;model_id&gt;5a512f018386a61040fffcc6feaad3e7&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_5a512f018386a61040fffcc6feaad3e7&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-09 02:37:21&lt;/sys_created_on&gt;&lt;sys_id&gt;a44b6fcd8386a61040fffcc6feaad3bc&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="New Hire Equipment Request"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-09 09:24:23&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a44b6fcd8386a61040fffcc6feaad3bc"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Catalog Request - Resubmission Flow"&gt;5a512f018386a61040fffcc6feaad3e7&lt;/model&gt;&lt;model_id&gt;5a512f018386a61040fffcc6feaad3e7&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_5a512f018386a61040fffcc6feaad3e7&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sc_req_item"&gt;sc_req_item&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-09 02:37:20&lt;/sys_created_on&gt;&lt;sys_id&gt;a84b6fcd8386a61040fffcc6feaad3b4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="New Hire Equipment Request"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-09 02:37:20&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a84b6fcd8386a61040fffcc6feaad3b4"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=5a512f018386a61040fffcc6feaad3e7"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=5a512f018386a61040fffcc6feaad3e7"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=5a512f018386a61040fffcc6feaad3e7^sys_idNOT INfc4bafcd8386a61040fffcc6feaad31c"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Catalog Request - Resubmission Flow"&gt;5a512f018386a61040fffcc6feaad3e7&lt;/flow&gt;&lt;name&gt;Service Catalog&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-09 02:37:22&lt;/sys_created_on&gt;&lt;sys_id&gt;fc4bafcd8386a61040fffcc6feaad31c&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-09 03:31:14&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Service Catalog"&gt;c43a1011c36813002841b63b12d3ae15&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;H4sIAAAAAAAA/61TTW/bMAz9K4FOG5CDk6zNktswoECAbgWarpdiMGSJcoTJkifJbr2g/32kPxK3M4YB3U2iyMfHx6eHIzM8A8O27LaysyvjHmc7y+ZM2wjecnPXlICP4uC0AIx3h2sdIts+HJm656aihIyLH7l3lZWYpK5HmIowtZ2dM2bvJChemfiecncFzwmBznswICJItlXcBMDItzC+fdEhaJv3gef5iIByHv5O4GXGG9p+n7OCW8mj8805ybviDorS8AinoPMSPNsukmTOaiK6b8JOdl0tL6i/r2xKDFNNstf9NHiUOiBYc3+OiIM20oNF5ZFCyT0iRMI/vnrS1OIy2SRivdys18tktUoSdZEpoYRYf1wkl4uLDQJOr36SWHzlg/Fk8BTBypFgf6rjgcsba86BAxqsm6rgT0H/QvAPCeUpwDFEP/HpmvZqDEIQi9A60Py71eopr/aDJGSmKawXrqmnzDZIQb7ou33+/wQXbya4JIKddDdl1A7Nwla0Wp4ZqglN6BbuQWBJGr3OcyzEImeqwn6d8kXPfuTSKuC2oCRH0IqH77E/uMfbYZ1X2raU+kfjBDenG4/YOasi6XdkXNYcK8jR0WOP59YV6c+KKtp/MvRK24koIQivy/hJRF3D6dP+BvLQA67rBAAA&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;service_catalog&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=5a512f018386a61040fffcc6feaad3e7^sys_idNOT IN17238d11838ea61040fffcc6feaad3bf,8768c9d5838ea61040fffcc6feaad301,c368c9d5838ea61040fffcc6feaad300"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Record"&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Record"&gt;b93f42810b30030085c083eb37673a63&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Catalog Request - Resubmission Flow"&gt;5a512f018386a61040fffcc6feaad3e7&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-09 09:01:28&lt;/sys_created_on&gt;&lt;sys_id&gt;17238d11838ea61040fffcc6feaad3bf&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="New Hire Equipment Request"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-09 09:24:23&lt;/sys_updated_on&gt;&lt;ui_id&gt;11c4af6f-75a7-4f7d-b8d9-68350981abaa&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/9VYW2/iOhD+K1GeKZtwC/TtqBVSpd2ttO3uS09lObED1ho7tR26FPHfdxwnQCFcSllt99HjuXwz883g8DD3GfEvfTIIBulg0O1HQdBuB0Gv105wGMftXhIHMe74DV/gCQVNg2NO4TjFPLdnnSBFnxAzdAJSwnTG8exHefmNPuVUG0q8G3efjBknigr/8uGx4WdYgVNDlX8537gys4wijmPKwc29jel9tQAaR+N9ZbyN3waojkg411IRiyVo+PSXoYJQCJVirmnDn2BBsJFqtpQoismt4CvBmAkDHn2r/EuzF3DfD6xeSiGthLq75RGVtXLiZCxZQm8zw6RwEgfUXUqeT8RXl4CtMk1xzk1VZZDkGvzRzGK2IEpE6d1YPn+rAg6ZKNIrL7lMMF+esDGKxbmh2vaCcjoBR2iCs4yJEcqUnLLCGLBMmiMOh2bK5TME1WwkmjixwJtQItwcgvy6EP/AitksvoAbMAZAjEO3kSu6lrkqqjJFCc91caGw0M6XvyhqhZ5yi9JlXeaHXIlAQSeKZeY/MJjSMpVFo6J0dy9FBitKJFIQZmPqdV7PNGLk/xyMyXx+R9UU+uNdQYJcjlDYVI7aBfGbTnmx2J6AU92cNihX65kcW4Va47rSlCPzSlaOTHi2kekEwV8aGqPyjzczh6bAJXxgFEKylwRk1W8tlUGucmuzsE3rkxk6ZJSTV6v8CHCV8a0lmxfPduEtCZraGBs7vfXP7/QPSU8ARJCrNxOcieInFYCeh7fdvdSIww0eFO1f2+BWhnWyzV7sGem9nL5li75W/D0CZGV4B4i8e4eyBni1Xyv3JXXbZ6Nuu/U26gJxHuZL9Muq1RS4ejnZ1lX6L1Yfb+oDu9YMwsXjkvpXp8UM3xqzZWNuzGb7TcO5zix3c72DYGd+l+0YtsafnO4xmJbxkBtW9MzIiJpV9EqLSPOM+c+6+5Jdyxkq0nv3Gy/c+xkQr73xWIom0CeWwcNT0QSooBFWFKUyFwSVT84VbWzfUqbgYeaU6z5tTK6EJ2HkPDOmXqHtLbXPsVmOyK4yvEm9Kr0Sg/YgPa9Iz1um97Zi7NhHnTO+9d6zj4aY8aL08OmQrfWOKiXVjp10oGt72n/kwjoSVHhWUO/faHV8r91sB7D+E9+h7906CcVxp4V7UTsMgyAMSBT0oyjs9+K0h6NOuho0hLRIYC2C5xSIAe5RRYSqq8H2anG78eQ/S2DnfhqWLo7FWxlfS2G/VVuR8Sxg6LNXAT6cUrkvYik5xWJFz+5fWxgf5f+UnN1v1saJPtc17U/9mOfsu2BPOb2xpOjToNUPSXLRj8LoopOS3sWA4O4FHsTdqE1o0klP/31+/A3EXJo1WBQAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Ask For Approval"&gt;f8f2e9920b10030085c083eb37673abd&lt;/action_type&gt;&lt;action_type_parent display_value="Ask For Approval"&gt;bae0a1120b10030085c083eb37673a92&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Catalog Request - Resubmission Flow"&gt;5a512f018386a61040fffcc6feaad3e7&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-09 09:24:23&lt;/sys_created_on&gt;&lt;sys_id&gt;8768c9d5838ea61040fffcc6feaad301&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="New Hire Equipment Request"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-09 09:24:23&lt;/sys_updated_on&gt;&lt;ui_id&gt;6b8f7d2b-cd74-4458-862d-cee95cdc7f9e&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1Y4W/aOhD/V1A+U55DSBr4Vq2qtKf33iba7UupIse5gCfjsNihY4j/fefEgRTaDCGmrtP7gnRn393v7n5nx9yvHZ44I+cyTPswHPZJ7BLiERL6jIQexN5lcOlRRpyuI+kccGcOLMsTlJdUFEaxXt9CvuQMOu+opiKbRm4vh68FKB1xDfNa2GzQKOFqIejqs7VFDZtxkeQgndH9Q9dZ0BzDaMid0XpvSa8WEAkag0DD64wVc5C68/4afRybQm09rnPYz8nEQDmx3iNulLhk8JCuA980yAQwWkqFgq4zpzKhOstXzkjnBSpyoMkHKVbbHTMudZXonH5T/Du69/pmXwqYGbNF2IqRLVBdmwzr+mGheSYrjaaxqAuXiWIu/6syMKWFlBZCN0pbKPQHCwPZgKgQprez7HFcx7vhskzOohUZo2IrUa1zHhcalOkGCChrMqeLBZfTaJFnS14aI5R5bypQ6KUie8SYik9ljzKDu4cFor0b1F+X6s805yaJf9ENGm/K5KOvhYlbpWEBR2XOVcK4S7GcL/QV+lyCRbjpWvbGrLX1bNfpyt2OvIpFlp6H5BxvF07j6J2J1Skb1D0a5xPjQ9yWoKUYycq15afbzk+rOYagIXkdglpEb4yhPyMnDALPx5/L1CNu3yUhBGHIhoSyMAj8gbdrMsZDxFQgJalC3zuafhSogU4OSw6PHT3jqmNp2zvkbfvm07h8i3WW05rHR6RUG17ZnDrjOqcXk7XcVnUoy+v+2XjtBm+U2AW/w9r8s9+LX8P3rg3XbEXBP0mOFHpvuh/042BIwuQiSUl8MQg9/4IyIBcQuD74ScB81zt1amqlyXqfIah6bs4220kjbtvxmoTPkC/lIJofM/XC4VQ1Vk4boRsT6sl1cATegzG6sYBfSsQOUSnuXRDnG6SQkFeapD/3G4a1kgEa18SXrMhlC3cjPPHLlr7I4caOc3H5CPi18d8V/n0q76fVwmTvfyb/xkwe+K1UgGdOL5bJhBt8qsHn6swDNYYvwLS6kqtP9+u10lRz1gtCN/YCHxihIXGDAfYxjUlM/NAfUMKSzebhkP9n8HjavOy+ggoBqp6ZIwq1fbFau9bC2YnZ3ZvWyE7N4FwP2Ncbmj/zhcBaeZAOd31PCiwH1c0X7HriVCAnzmjiyEzCxOlOHLMrMoQo1bgDwW0XSt16vdlUmiKn1oHbEHfWCV2pcqdiM0iQVKX2iaZiutWf84+eWxugc424/7rjjRvn51Xb/ltUVPbPFrJ+dtSZVJXjzfvGP9t9M3ijg1PwaPsBjNcAHhW/7P1x6jQ9/ADsPgL8zBQAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Catalog Request - Resubmission Flow"&gt;5a512f018386a61040fffcc6feaad3e7&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-09 09:24:23&lt;/sys_created_on&gt;&lt;sys_id&gt;c368c9d5838ea61040fffcc6feaad300&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="New Hire Equipment Request"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-09 09:24:23&lt;/sys_updated_on&gt;&lt;ui_id&gt;1323bc0c-bd9f-4dda-8c30-db9cc3dcf8a8&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1UW2vbMBT+K8HPSZDi3N8GpdCHtZCNvnRFHFvHjUCWXUnOZSH/fZItp+llXQiBMZjfzrHOdzn60MMuEjyaR0PkhM7oOI1pHA8IGUyHNBnHCR3wGBBp1I0U5OhOakwLzV29Aln5xm5HaTqEbJz1JiOY9IbZhPeSKZ/1xtN4RGZTCglAf1HP7fdukgtTStjeBwDXSZdCco0qmj88dqMStOOyqKP57s0vuy2RSUhQusGrIq1yVLZzc+UwTvXRTi9aI2+NeQ5X84DOhG+6X14PJd0INxYVR0eXgTTYjXJQHGyht9Hc6so1NAK/U3J7OLEUyjZOc9gY8dPhD4k/l6GzloYtHEoWNtQupxAp3pVWFKrpWEhku7lCVrm6bSz43WIGlbRHu62Mw8PSS/YiGoXZt2WxXrR810LV7oJaWaQgDxVYq0VSWTT+OlBivZQcylKoJ1bqYiXqYScl7z9JV/QzWawdpxFPqg+p1913C4L+tetf1e170MKb+Opg3PC+Ns+eK8/b2AiCWe25Nszqi3JHTapFab844BUGmftuCHIy+iwA6ezlvo8wX8JsUqbxmQmL+fugLvC5QmORd26a/+fF9rsn7tw2xKeKfjX8GxMhuK96Ibeji+V2+pdyGxT9Y8H9U1zJ4NP36uim64Sao6hu2ICMKaFM4ZothWbER9cHlBkLtjI/KkJibqokF8b4O3gX6HMgzsw85o7YYqeh7p7svgW4Fii5+WAdbegDAVsFgsODfbHk0zGpv//v9gXf7cdfMeFeSYIIAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=5a512f018386a61040fffcc6feaad3e7"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=5a512f018386a61040fffcc6feaad3e7^sys_idNOT IN0768c9d5838ea61040fffcc6feaad304,8b68c9d5838ea61040fffcc6feaad302"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;0f68c9d5838ea61040fffcc6feaad303&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Catalog Request - Resubmission Flow"&gt;5a512f018386a61040fffcc6feaad3e7&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;5&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-09 09:24:23&lt;/sys_created_on&gt;&lt;sys_id&gt;0768c9d5838ea61040fffcc6feaad304&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="New Hire Equipment Request"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-09 09:24:23&lt;/sys_updated_on&gt;&lt;ui_id&gt;568ce4d2-865e-4406-b0bd-73e198b47965&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1Vy27bMBD8FYNnWdDD8usWtAhQoG2AJMilDQSKXNlsKFIlqTiu4X/vUg/HSG3UKHLsTZxd7s4sZ6Ed0Y2rG2fv9ZW1YqXI8ttjQITyGH7viOBkScqIlvGCxSxNpmkSRcl8EhfTtIgTnlKgKQmIohVgJtOKCye0ylsgIM9UNj5A69poPIwctU8jYUe38AOYA445XNha0u3DBalsLSQ30POsqcEuDgxZ7t6E3LaGXNICJFa8c0aoFV6/VM1w8cMgZ/S5Rc7r9P0Qt0MnbbinFUcBgRcHiiP9ZUmlhYBUVHHqtNkeEAOU3yj5CqyFcliO+OQXK35h7STLfGIJqJFBFzwc836GHczWWjC4qT3BDnG0kP0dpmVTqa+dDj99KGkj3TB9RBqL9aD2pD2LnlJ5t9ab26HhtVCtwD4oNaPycKIOx1A0Dqx/GJBQYaG8wofF4eT+dUV7GblU4UriISyl3mBT78GQMk88xBnR8Brxjy38QI3wKr5gGbzc0SyoFSxv/YrlnEEJ+3Ys+c/GE+oE9lLybhqYYJkRtbvCPs/Qs94HvdkXNCuzOMpO22MyPWGCI5/vdtNiXs54UowZn03Gk0k2H8+nCR8zgEXGOJuVCwgHj+fWUQf7/fcmilJ077mdeK+y77E/Fwzoj/05PbQzS5P8ZWn8M1+4M1EU/V+a46URNu/M32trm//zzjx643cdbOcbDkxYJHLvsU/Df8QHtmgAwY6hjTZPXsIrtv8NdLW9+JEGAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;4f68c9d5838ea61040fffcc6feaad301&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Catalog Request - Resubmission Flow"&gt;5a512f018386a61040fffcc6feaad3e7&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-09 09:24:23&lt;/sys_created_on&gt;&lt;sys_id&gt;8b68c9d5838ea61040fffcc6feaad302&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="New Hire Equipment Request"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-09 09:24:23&lt;/sys_updated_on&gt;&lt;ui_id&gt;7a548bf4-f5bc-4afe-a08d-010722b80e92&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1Vy27bMBD8FYNnWdDD8utmtAhQoG2AJsilDYQVubKJUKIqUnFcw//epR6OkdqoUeTYmzi73J1ZzkJ7phtbNdbc65Uxcl2y5fdHj8nSYfS9Z1KwJcsDyMMFD3kcTeMoCKL5JMymcRZGIgaEmHmshAIpk+tSSCt1mbaAx55BNS4AVVVrOowsmKeRNKNVC6CgHCFNpWD3cEUq30glaux5VlBTF4s1W+7fhOyuwlRBhooq3tlalmu6fq2a4eKHQc7oc4tc1un6EW6GTroWjlYYeAxfLJaC6C9zUAY9VkApwOp6d0RqBHFbqldgI0tL5ZhLfjHyF9WOksQl5kgaOXbB4zHtZ9jBfKMlx9vKEewQC5nq73CtmqL82ulw08ccGmWH6RPSGKqHlSPtWPSU8ruN3n4bGt7IshXYB5XmoI4nsDSGrLFo3MOgwoIKpQU9LA0ndY8p28vEpfDXig5+rvSWmjoP+sAdcZ9mBP4N4R9b+AFq6VR8oTJ0uaOZgZE8bf1K5WxNEg7tWNKfjSPUCeylpN00KMHwWlZ2RX2esWd98HqzLyDJkzBIzttjMj1jghOf7/fTbJ7PRJSNuZhNxpNJMh/Pp5EYc8RFwgWf5Qv0B4+nxoLFw+FHEwSxgIs78V5l32N/rhjQH/tzfmgXlib6y9K4Z75yZ4Ig+L80p0sjTdqZv9fWNv/nnXl0xu86mM43Ark0ROTeYZ+G/4gL7MgAkp9CW10/OQmv2OE3sLy10pEGAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=5a512f018386a61040fffcc6feaad3e7"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=5a512f018386a61040fffcc6feaad3e7"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_5a512f018386a61040fffcc6feaad3e7&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-09 02:37:21&lt;/sys_created_on&gt;&lt;sys_id&gt;284b6fcd8386a61040fffcc6feaad3cd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="New Hire Equipment Request"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-09 02:37:21&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_5a512f018386a61040fffcc6feaad3e7&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-09 02:37:21&lt;/sys_created_on&gt;&lt;sys_id&gt;604b6fcd8386a61040fffcc6feaad3bb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="New Hire Equipment Request"&gt;bb97088283f1ae10a404e5d0deaad37f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-09 02:37:21&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_5a512f018386a61040fffcc6feaad3e7"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5a512f018386a61040fffcc6feaad3e7"/&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=5a512f018386a61040fffcc6feaad3e7"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=5a512f018386a61040fffcc6feaad3e7"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-593678184</payload_hash>
+        <record_name>Catalog Request - Resubmission Flow</record_name>
+        <reverted_from/>
+        <source>17f211548302a21040fffcc6feaad3b3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-09 09:24:23</sys_created_on>
+        <sys_id>0768c9d5838ea61040fffcc6feaad310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197540157ee0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-09 09:24:23</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>8b68c9d5608ea610a9bff90b1d834a0f</update_guid>
+        <update_guid_history>8b68c9d5608ea610a9bff90b1d834a0f:-593678184,0c33cd11cb8ea610ec08a7098e5a9323:-1177916079,56f0895d6d4ea610f26343dd7458aa82:755170928,ca973bcd1ec6a6105906acbb7eeed74a:774277447,1905b70d28c6a61057ff23ccb3b7783a:1480540024,384bafcd9d86a6107a1d6929bdf0d32b:2111852060,1651a3c10586a6103a1df1bd5ee370e0:1774136447</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-10 01:09:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>1af113d1f18944809c3a82d6dc78e164</sys_id>
+        <sys_metadata>5a512f018386a61040fffcc6feaad3e7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Catalog Request - Resubmission Flow</sys_name>
+        <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
+        <sys_scope_delete display_value="">2bb46b0be8674aac9d3deb1307567110</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_5a512f018386a61040fffcc6feaad3e7</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_5a512f018386a61040fffcc6feaad3e7">0768c9d5838ea61040fffcc6feaad310</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-10 01:09:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

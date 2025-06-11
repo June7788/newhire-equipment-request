@@ -12,22 +12,24 @@ function updateField() {
     // 获取当前表单的sys_id
     var sysId = g_form.getUniqueValue();
 
-    // 创建GlideAjax请求
+    // 创建GlideAjax请求, 使用GlideAjax更新字段
     var ga = new GlideAjax("x_206101_new_hir_0.UpdateFieldProcessor");
+    ga.addParam('sysparm_table_name', 'x_206101_new_hir_0_equipment_request');
     ga.addParam('sysparm_sys_id', sysId);
-    ga.addParam('sysparm_field_name', g_form.getValue('comment'));
+    ga.addParam('sysparm_field_name', 'comment');
+    ga.addParam('sysparm_field_value', g_form.getValue('comment'));
     ga.getXML(function(response) {
         var answer = response.responseXML.documentElement.getAttribute('answer');
         if (answer == 'success') {
             // 更新成功，刷新表单中的comment字段
-			g_form.save();
-            g_form.showFieldMsg('comment', 'Comment updated successfully', 'info');
+            g_form.save();
+            g_form.showFieldMsg('comment', 'Updated successfully', 'info');
         } else {
-            g_form.showFieldMsg('comment', 'Failed to update comment', 'error');
+            g_form.showFieldMsg('comment', 'Failed to update', 'error');
         }
-        g_form.clearValue('stock');
-        g_form.setValue('stock', answer);
-        GlideModal.get().destroy();
+        // g_form.clearValue('stock');
+        // g_form.setValue('stock', answer);
+        // GlideModal.get().destroy();
     });
 }]]></client_script>
         <description>Buttons with confirmation dialog boxes</description>
@@ -65,13 +67,13 @@ function updateField() {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-05 07:55:24</sys_created_on>
         <sys_id>0f2d0c44830a2610a404e5d0deaad3c0</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>UpdateFieldDialog</sys_name>
         <sys_package display_value="New Hire Equipment Request" source="x_206101_new_hir_0">bb97088283f1ae10a404e5d0deaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="New Hire Equipment Request">bb97088283f1ae10a404e5d0deaad37f</sys_scope>
         <sys_update_name>sys_ui_page_0f2d0c44830a2610a404e5d0deaad3c0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-05 16:31:41</sys_updated_on>
+        <sys_updated_on>2025-06-11 15:00:36</sys_updated_on>
     </sys_ui_page>
 </record_update>
